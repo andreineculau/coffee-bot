@@ -1,0 +1,32 @@
+{
+	"host":		"irc.freenode.com",
+	"port":		6667,
+	"nick":		"CoffeeBot",
+	"username":	"CoffeeBot",
+	"realname":	"Powered by NodeJS",
+	"channels":	[
+        "#coffeebot"
+    ],
+	"command":	"!",
+
+	"plugins": [
+        "global"
+    ],
+    "pluginConfigs": {
+        "global": {}
+    },
+
+    "log": {
+        "Console": {
+            "level": "info",
+            "colorize": true,
+            "timestamp": true
+        },
+        "File": {
+            "level": "info",
+            "colorize": true,
+            "timestamp": true,
+            "filename": "bot.log"
+        }
+    }
+}

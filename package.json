@@ -1,44 +1,42 @@
 {
-  "name": "NodeJS-IRC-Bot",
-  "description": "An Open Source IRC Bot written with NodeJS",
+  "name": "coffee-bot",
+  "preferGlobal": false,
+  "private": true,
   "version": "0.0.7",
   "author": "Michael Owens (http://www.michaelowens.nl)",
-  "contributors ": [{
-    "name": "Michael Owens",
-    "web": "http://www.michaelowens.nl"
-  },
-  {
-    "name": "Karl Tiedt",
-    "web": "http://www.twitter.com/ktiedt"
-  },
-  {
-    "name": "Markus M. May",
-    "email": "mmay@javafreedom.org",
-    "web": "http://www.javafreedom.org"
-  }],   
+  "description": "The name says it all",
+  "contributors ": [
+    "Michael Owens (http://www.michaelowens.nl)",
+    "Karl Tiedt (http://www.twitter.com/ktiedt)",
+    "Markus M. May <mmay@javafreedom.org> (http://www.javafreedom.org)",
+    "Andrei Neculau <@andreineculau>"
+  ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/ktiedt/NodeJS-IRC-Bot"
+    "url": "http://github.com/andreineculau/coffee-bot"
   },
-  "main": "bot.js",
+  "keywords": [
+    "irc",
+    "bot"
+  ],
+  "license": "UNLICENSE",
   "engines": {
-    "node": ">=0.8"
+    "node": "~0.8.12"
   },
   "dependencies": {
-    "pkgconfig": "0.0.4",
-    "optimist": "0.3.5",
-    "winston": "0.6.x"
+    "coffee-script": "~1.4.0",
+    "shelljs": "~0.1.2",
+    "pkgconfig": "~0.0.4",
+    "optimist": "~0.3.5",
+    "winston": "~0.6.x"
   },
   "devDependencies": {
-    "should": "1.2.x",
-    "underscore": "*",
-    "mocha": "*"
-  },  
-  "licenses": {
-    "type": "UNLICENSE",
-    "url": "http://unlicense.org/"
+    "should": "~1.2.0",
+    "underscore": "~1.4.4",
+    "mocha": "~1.8.1"
   },
-  "scripts": {
-    "test": "mocha --reporter spec test/*.spec.js"
-  }  
+  "bundleDependencies": [],
+  "scripts": {},
+  "bin": "bot.coffee",
+  "main": "main"
 }
